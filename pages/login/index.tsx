@@ -83,7 +83,7 @@ function LoginPage() {
               </FormItem>
             )}
           />
-          <Button type="submit">Submit</Button>
+          <Button type="submit">Login</Button>
         </form>
       </Form>
     </div>
