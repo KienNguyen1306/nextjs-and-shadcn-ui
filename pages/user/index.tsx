@@ -15,15 +15,15 @@ function UserPage() {
 
   const [userData, setUserData] = useState<UserData | null>(null);
   const [showToken, setShowToken] = useState(false);
-  useEffect(() => {
-    const storedData = localStorage.getItem("userData");
-    if (storedData) {
-      const parsedData = JSON.parse(storedData);
-      setUserData(parsedData);
-    } else {
-      router.push("/login");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedData = localStorage.getItem("userData");
+  //   if (storedData) {
+  //     const parsedData = JSON.parse(storedData);
+  //     setUserData(parsedData);
+  //   } else {
+  //     router.push("/login");
+  //   }
+  // }, []);
 
   const handleShowToken = () => {
     setShowToken(!showToken);
